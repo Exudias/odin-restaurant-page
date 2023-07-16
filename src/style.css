@@ -1,15 +1,15 @@
 :root {
-    --color-950: #052e16;
-    --color-900: #14532d;
-    --color-800: #166534;
-    --color-700: #15803d;
-    --color-600: #16a34a;
-    --color-500: #22c55e;
-    --color-400: #4ade80;
-    --color-300: #86efac;
-    --color-200: #bbf7d0;
-    --color-100: #dcfce7;
-    --color-50: #f0fdf4;
+    --color-950: #431407;
+    --color-900: #7c2d12;
+    --color-800: #9a3412;
+    --color-700: #c2410c;
+    --color-600: #ea580c;
+    --color-500: #f97316;
+    --color-400: #fb923c;
+    --color-300: #fdba74;
+    --color-200: #fed7aa;
+    --color-100: #ffedd5;
+    --color-50: #fff7ed;
 }
 
 * {
@@ -128,15 +128,13 @@ body {
 
 .body-heading {
     padding: 12px;
-    width: auto;
 
-    font-size: 48px;
+    font-size: 2.8vw;
     text-align: center;
 }
 
 .review {
     padding: 12px;
-
     
     font-size: 2vw;
 
@@ -162,6 +160,11 @@ body {
     gap: 12px;
 }
 
+.hours {
+    font-size: 1.5vw;
+    align-items: center;
+}
+
 .hours > *:nth-child(2) {
     font-size: 1.2vw;
     font-weight: lighter;
@@ -173,6 +176,8 @@ body {
 
 .location {
     padding: 12px;
+
+    font-size: 1.5vw;
 
     display: flex;
     flex-direction: column;

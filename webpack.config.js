@@ -15,7 +15,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Restaurant Page',
+      title: 'La Casa Soleggiata',
     }),
   ],
   module: {

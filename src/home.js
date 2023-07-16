@@ -8,7 +8,7 @@ function loadHome()
     // Heading
     let heading = document.createElement("h1");
     heading.className = "body-heading";
-    heading.textContent = "La Casa Solegiatta";
+    heading.textContent = "La Casa Soleggiata";
     home.appendChild(heading);
 
     // Review panel
