@@ -8,9 +8,13 @@ document.body.appendChild(contentDiv);
 
 function createPage()
 {
-    createNav();
+    let {nav, navBtns} = createNav();
     createBody();
     createFooter();
+
+    // Disable home button since it's the default
+    navBtns[0].disabled = true;
+    loadHome();
 }
 
 function createNav()
@@ -23,6 +27,8 @@ function createNav()
     navBtns.forEach(btn => {
         nav.appendChild(btn);
     });
+
+    return {nav, navBtns};
 }
 
 function createNavButtons()
@@ -32,29 +38,34 @@ function createNavButtons()
     let aboutBtn = makeButton("About");
 
     homeBtn.addEventListener("click", () => {
+        clearBody();
         loadHome();
         menuBtn.disabled = false;
         aboutBtn.disabled = false;
         homeBtn.disabled = true;
     });
     menuBtn.addEventListener("click", () => {
+        clearBody();
         loadMenu();
         menuBtn.disabled = true;
         aboutBtn.disabled = false;
         homeBtn.disabled = false;
     });
     aboutBtn.addEventListener("click", () => {
+        clearBody();
         loadAbout();
         menuBtn.disabled = false;
         aboutBtn.disabled = true;
         homeBtn.disabled = false;
     });
 
-    // Disable home button since it's the default
-    homeBtn.disabled = true;
-    loadHome();
-    
     return [homeBtn, menuBtn, aboutBtn];
+}
+
+function clearBody()
+{
+    const body = document.querySelector(".body-container");
+    body.innerHTML = "";
 }
 
 function makeButton(text)
