@@ -8,7 +8,7 @@ function loadAbout()
     // Heading
     let heading = document.createElement("h1");
     heading.className = "body-heading";
-    heading.textContent = "La Casa Soleggiata";
+    heading.textContent = "La Casa Soleggiata\nABOUT";
     about.appendChild(heading);
 }
 

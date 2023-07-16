@@ -13,8 +13,8 @@ function createPage()
     createFooter();
 
     // Disable home button since it's the default
-    navBtns[0].disabled = true;
-    loadHome();
+    navBtns[1].disabled = true;
+    loadMenu();
 }
 
 function createNav()

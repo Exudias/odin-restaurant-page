@@ -1,4 +1,4 @@
-import RestaurantInterior from "./restaurant-interior.jpg";
+import RestaurantInterior from "./img/restaurant-interior.jpg";
 
 function loadHome()
 {
@@ -10,7 +10,7 @@ function loadHome()
     // Heading
     let heading = document.createElement("h1");
     heading.className = "body-heading";
-    heading.textContent = "La Casa Soleggiata";
+    heading.innerHTML = "La Casa Soleggiata<br>HOME";
     home.appendChild(heading);
 
     // Image

@@ -1,0 +1,47 @@
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.entry-container {
+    display: grid;
+
+    gap: 8px;
+
+    grid-template: 1fr auto / 3fr 1fr;
+
+    font-family: Lora;
+
+    height: auto;
+}
+
+.title-container {
+    grid-area: 1 / 1 / span 1 / span 1;
+
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.side-container {
+    grid-area: 1 / 2 / span 1 / span 1;
+
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.ingredients-container {
+    grid-area: 2 / 1 / span 1 / span 1;
+
+    font-size: 24px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.title-container,
+.side-container,
+.ingredients-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
