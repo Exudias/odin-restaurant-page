@@ -39,12 +39,18 @@ function makeButton(text)
 
 function createBody()
 {
-
+    let body = document.createElement("div");
+    body.className = "body-container";
+    contentDiv.appendChild(body);
 }
 
 function createFooter()
 {
+    let footer = document.createElement("div");
+    footer.className = "footer-container";
+    contentDiv.appendChild(footer);
 
+    footer.textContent = "Copyright © Exudias 2023";
 }
 
 export default createPage;
