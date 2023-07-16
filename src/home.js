@@ -1,3 +1,5 @@
+import RestaurantInterior from "./restaurant-interior.jpg";
+
 function loadHome()
 {
     const body = document.querySelector(".body-container");
@@ -11,15 +13,20 @@ function loadHome()
     heading.textContent = "La Casa Soleggiata";
     home.appendChild(heading);
 
+    // Image
+    let img = new Image();
+    img.src = RestaurantInterior;
+    home.appendChild(img);
+
     // Review panel
     let review = document.createElement("div");
     review.className = "review";
 
     let reviewBody = document.createElement("p");
-    reviewBody.textContent = "A great restaurant in the heart of the city! The food is great, the service is quick, and the staff are very kind.";
+    reviewBody.textContent = "\"A great restaurant in the heart of the city! The food is great, the service is quick, and the staff are very kind.\"";
 
     let reviewer = document.createElement("p");
-    reviewer.textContent = "Anonymous";
+    reviewer.textContent = "- Anonymous";
 
     review.appendChild(reviewBody);
     review.appendChild(reviewer);
@@ -55,7 +62,7 @@ function loadHome()
     locationTitle.textContent = "Location";
 
     let locationBody = document.createElement("p");
-    locationBody.textContent = "123 George St., Georgeville, Georgia";
+    locationBody.textContent = "Olimpi Panov 23 Str., Ruse, Bulgaria";
 
     location.appendChild(locationTitle);
     location.appendChild(locationBody);

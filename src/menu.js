@@ -4,7 +4,12 @@ function loadMenu()
 
     let menu = document.createElement("div");
     body.appendChild(menu);
-    menu.textContent = "Hello! I am a menu page.";
+    
+    // Heading
+    let heading = document.createElement("h1");
+    heading.className = "body-heading";
+    heading.textContent = "La Casa Soleggiata";
+    menu.appendChild(heading);
 }
 
 export default loadMenu;
