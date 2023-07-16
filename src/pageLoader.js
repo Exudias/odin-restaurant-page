@@ -11,17 +11,40 @@ function createPage()
 
 function createNav()
 {
-    console.log("Doing...");
+    let nav = document.createElement("div");
+    nav.className = "navigation-container";
+    contentDiv.appendChild(nav);
+
+    let navBtns = createNavButtons();
+    navBtns.forEach(btn => {
+        nav.appendChild(btn);
+    });
+}
+
+function createNavButtons()
+{
+    let homeBtn = makeButton("Home");
+    let menuBtn = makeButton("Menu");
+    let aboutBtn = makeButton("About");
+    // Add eventlisteners
+    return [homeBtn, menuBtn, aboutBtn];
+}
+
+function makeButton(text)
+{
+    let btn = document.createElement("button");
+    btn.innerText = text;
+    return btn;
 }
 
 function createBody()
 {
-    console.log("It...");
+
 }
 
-createFooter()
+function createFooter()
 {
-    console.log("Now...");
+
 }
 
 export default createPage;
