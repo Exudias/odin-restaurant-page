@@ -1,1 +1,3 @@
-console.log("Gimli");
+import createPage from "./pageLoader";
+
+createPage();
