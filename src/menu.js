@@ -16,36 +16,9 @@ function loadMenu()
     let saladContainer = addMenuContainer(menu);
     addEntries(saladContainer, salads);
 
-    addHeading(menu, "Antipasti / Cold Appetizers");
+    addHeading(menu, "Antipasti");
     let appetizer1Container = addMenuContainer(menu);
     addEntries(appetizer1Container, appetizers1);
-
-    addHeading(menu, "Antipasti / Warm Appetizers");
-    addHeading(menu, "Pasta");
-    addHeading(menu, "Risotto");
-    addHeading(menu, "Pizza");
-    addHeading(menu, "Main Courses");
-    addHeading(menu, "Fish");
-    addHeading(menu, "Sides");
-    addHeading(menu, "Bread");
-    addHeading(menu, "Dessert");
-    addHeading(menu, "Drinks");
-    addSubHeading(menu, "Soft Drinks");
-    addSubHeading(menu, "Hot Drinks");
-    addSubHeading(menu, "Beer");
-    addSubHeading(menu, "Vodka");
-    addSubHeading(menu, "Rakia");
-    addSubHeading(menu, "Ouzo");
-    addSubHeading(menu, "Gin");
-    addSubHeading(menu, "Whiskey");
-    addSubHeading(menu, "Rum");
-    addSubHeading(menu, "Cognac");
-    addSubHeading(menu, "Vermouths & Liquors");
-    addSubHeading(menu, "White Wine");
-    addSubHeading(menu, "Rosé");
-    addSubHeading(menu, "Red Wine");
-    addSubHeading(menu, "Draft Wine");
-    addHeading(menu, "Allergens");
 }
 
 function addEntries(container, list)

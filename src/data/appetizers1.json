@@ -1,62 +1,8 @@
 {
     "0": 
     {
-        "name": "Buratta",
-        "side": "350g / 14.90 BGN",
-        "ingredients": "Buratta cheese, rose tomato, arugula, sliced ​​almonds, basil dressing /4,10/"
-    },
-    "1":
-    {
-        "name": "Toscana 2.0",
-        "side": "350g / 11.90 BGN",
-        "ingredients": "Mixed green salads, radicchio, prosciutto crudo, citrus, cherry tomatoes, arugula, orange dressing"
-    },
-    "2": 
-    {
-        "name": "Caesar",
-        "side": "400g / 12.90 BGN",
-        "ingredients": "Mixed green salads, bacon, grilled chicken fillets, freshly baked croutons, parmesan, Caesar sauce /1,4/"
-    },
-    "3": 
-    {
-        "name": "Caesar di Mare",
-        "side": "400g / 14.90 BGN",
-        "ingredients": "Mix of green salads, squid, shrimp, freshly baked croutons, parmesan, Caesar sauce /1,4,11,12/"
-    },
-    "4": 
-    {
-        "name": "Panzanella (Our style)",
-        "side": "400g / 9.90 BGN",
-        "ingredients": "Pink tomato, cucumber, red onion, freshly baked ciabatta, baby mozzarella, parsley dressing /1,4/"
-    },
-    "5": 
-    {
-        "name": "Formaggio 2.0",
-        "side": "330g / 12.90 BGN",
-        "ingredients": "Mixed green salads salad, cherry tomatoes, Gorgonzola, smoked Scamoretza, Brie cheese, Parmesan, Pecan nuts, grapes, citrus dressing /4,10/"
-    },
-    "6": 
-    {
-        "name": "Mediterranean 2.0",
-        "side": "400g / 11.90 BGN",
-        "ingredients": "Pink tomato, roasted red pepper, marinated cheese, Tajaska olives, basil and homemade olive dressing /4/"
-    },
-    "7": 
-    {
-        "name": "Napoleon",
-        "side": "350g / 11.90 BGN",
-        "ingredients": "Baked eggplant and tomato, garnished with parmesan mousse, arugula and balsamic reduction /4/"
-    },
-    "8": 
-    {
-        "name": "Caprese",
-        "side": "350g / 10.90 BGN",
-        "ingredients": "Pink tomato, mozzarella, basil pesto /4/"
-    },
-    "9": 
-    {
-        "name": "Dolomites",
-        "side": "400g / 12.90 BGN",
-        "ingredients": "Mixed green salads, baked goat cheese with bruschetta, \"Pecan\" walnuts, grapes, orange dressing, balsamic reduction, /4,10/"
+        "name": "French Fries",
+        "side": "350g / 8.90 BGN",
+        "ingredients": "Fried potatoes, cheese"
     }
 }
