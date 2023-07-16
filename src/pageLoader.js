@@ -1,3 +1,7 @@
+import loadHome from "./home";
+import loadMenu from "./menu";
+import loadAbout from "./about";
+
 const contentDiv = document.createElement("div");
 contentDiv.id = "content";
 document.body.appendChild(contentDiv);
@@ -26,7 +30,30 @@ function createNavButtons()
     let homeBtn = makeButton("Home");
     let menuBtn = makeButton("Menu");
     let aboutBtn = makeButton("About");
-    // Add eventlisteners
+
+    homeBtn.addEventListener("click", () => {
+        loadHome();
+        menuBtn.disabled = false;
+        aboutBtn.disabled = false;
+        homeBtn.disabled = true;
+    });
+    menuBtn.addEventListener("click", () => {
+        loadMenu();
+        menuBtn.disabled = true;
+        aboutBtn.disabled = false;
+        homeBtn.disabled = false;
+    });
+    aboutBtn.addEventListener("click", () => {
+        loadAbout();
+        menuBtn.disabled = false;
+        aboutBtn.disabled = true;
+        homeBtn.disabled = false;
+    });
+
+    // Disable home button since it's the default
+    homeBtn.disabled = true;
+    loadHome();
+    
     return [homeBtn, menuBtn, aboutBtn];
 }
 
